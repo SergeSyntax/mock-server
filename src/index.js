@@ -4,7 +4,7 @@ const { requireAuthHeader, handleAuth } = require('./lib/auth');
 const { v4: uuidv4 } = require('uuid');
 
 const app = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+const router = jsonServer.router(path.join(__dirname, '..', 'db.json'));
 
 // Set default middleware (logger, static, cors and no-cache)
 app.use(jsonServer.defaults());

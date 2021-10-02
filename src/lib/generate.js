@@ -20,7 +20,7 @@ const writeFile = promisify(fs.writeFile);
 const removeFile = promisify(rimraf);
 
 // File PAth
-const DB_PATH = path.join(__dirname, 'db.json');
+const DB_PATH = path.join(__dirname, '..', '..', 'db.json');
 
 const generateFile = async (obj) => {
   try {
